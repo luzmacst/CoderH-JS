@@ -1,0 +1,10 @@
+const local1 ="Tucuman";
+const local2="Buenos Aires";
+const local3="Santa Fe";
+const local4="Cordoba";
+const local5="Usuahia";
+console.log (local1);
+console.log (local2);
+console.log (local3);
+console.log (local4);
+console.log (local5);

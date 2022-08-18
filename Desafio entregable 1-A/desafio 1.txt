@@ -1,0 +1,44 @@
+Formato: Página HTML con código fuente en Javascript. Consigna: crear un algoritmo que repita un bloque de instrucciones. En cada repetición es necesario efectuar una operación o comparación para obtener una salida por alerta o consola. Aspectos a incluir en el entregable: Archivo HTML y Archivo JS, referenciado en el HTML por etiqueta , que incluya la definición de un algoritmo en JavaScript que emplee bucles e instrucciones condicionales. Ejemplos:
+
+Pedir número mediante prompt y sumarle otro número en cada repetición,realizando una salida por cada resultado.
+Pedir un texto mediante prompt, concatenar un valor en cada repetición, realizando una salida por cada resultado, hasta que se ingresa “ESC”.
+Pedir un número por prompt, repetir la salida del mensaje “Hola” la cantidad de veces ingresada.
+
+
+Seleccion de cafe
+
+habria que indicar que no tome en cuenta mayusculas o minusculas , cuando selecciona el cafe
+-Espresso
+-Macchiato
+-Latte
+-Flat White
+-Cappucino
+-Mocha
+
+
+ indicar si quiere 1 taza o 2 
+
+seleccionar si quiere azucar
+-S
+	en eses caso, cuantas cucharadas?
+-N
+
+-indicar monto a pagar
+
+-Espresso  $250
+-Macchiato $280
+-Latte $260
+-Flat White $350
+-Cappucino $350
+-Mocha $280
+-Doppio $250
+-Long Black $250
+
+
+Donde le voy sumando el monto y el azucar?
+el el switch? o en el if?
+lo voy acumulando en la variable que cree?
+
+- Mostrara mensaje , su cafe esta listo!
+
+
