@@ -1,0 +1,2 @@
+Hola Luciana, te corrijo el desafío! Está muy bien encaminado, lo único que te recomendaria es notificar al cliente que se hace descuento desde cierto monto, si lo deseas le podes agregar el monto del envio y luego en un alert le informas del total. Más allá de eso, está aprobado!
+
