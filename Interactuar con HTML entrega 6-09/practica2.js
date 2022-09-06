@@ -42,20 +42,22 @@ class Usuarios{
 // Se solicita el ingreso al cliente , por ahora no vamos a validar el usuario
 const ingresousuario = prompt ("Bienvenido es necesario que ingrese su nombre de usuario para poder operar");
 const password = prompt ("Ingrese su contraseña");
-
+ if (nombreusuario!=Null)
+ {
+      let $loginid= document.querySelector(".link-form");
+      console.log($loginid) ;
+      $loginid.innerHTML=ingresousuario;
+  // aca realizaria la forma para completar con los datos del usuario el HTML y los muestre como bienvenida
+ }
 const usuario = new Usuarios (ingresousuario,password );
 console.log (usuario); 
 let $idusuasrio = document.getElementById("id-usuario");
 $idusuasrio.innerText=`Bienvenido ${ingresousuario}`;
-// Aca lo que hacemos es cambiar el "Login" por el usuario al ser identificado
-let $loginid= document.querySelector(".link-form");
-console.log($loginid) ;
-$loginid.innerHTML=ingresousuario;
+// Aca lo que hacemos es cambiar el "Login" por el usuario al ser identificado, faltaria que en caso de no ingresar usuario
+// osea , que sea Null, entonces quedaria la palabra "Login" fija
+
 //Se agrega un condicional para validar que se ingresaron datos
-// if (nombreusuario!=0)
-// {
-  // aca realizaria la forma para completar con los datos del usuario el HTML y los muestre como bienvenida
-//}
+
 
 console.log (usuario);
 let selecciondetratam =parseInt(prompt("Seleccionar tratamiento: 1) Depilacion 2)HiFu 3)Criolipolisis 4)HimFu  5)ESC"));
