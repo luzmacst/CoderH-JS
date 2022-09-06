@@ -45,12 +45,17 @@ const password = prompt ("Ingrese su contraseña");
 
 const usuario = new Usuarios (ingresousuario,password );
 console.log (usuario); 
-let idusuasrio = document.getElementById("id-usuario");
-idusuasrio.innerHTML=`Bienvenido ${ingresousuario}`;
+let $idusuasrio = document.getElementById("id-usuario");
+$idusuasrio.innerText=`Bienvenido ${ingresousuario}`;
+// Aca lo que hacemos es cambiar el "Login" por el usuario al ser identificado
+let $loginid= document.querySelector(".link-form");
+console.log($loginid) ;
+$loginid.innerHTML=ingresousuario;
 //Se agrega un condicional para validar que se ingresaron datos
 // if (nombreusuario!=0)
 // {
   // aca realizaria la forma para completar con los datos del usuario el HTML y los muestre como bienvenida
+//}
 
 console.log (usuario);
 let selecciondetratam =parseInt(prompt("Seleccionar tratamiento: 1) Depilacion 2)HiFu 3)Criolipolisis 4)HimFu  5)ESC"));
