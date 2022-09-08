@@ -1,4 +1,5 @@
-
+//eventos js
+//Identificador de cliente y bienvenida
 
 class Usuarios{
     constructor(ingresousuario, apellidousuario,password,direccion,email,telefono){
@@ -10,13 +11,12 @@ class Usuarios{
         // this.telefono=telefono;
     }
   }
-//Solicito el ingreso del usuario 
+//Solicito el ingreso del cliente 
   const form = document.querySelector("#formulario");
   const ingresousuario =[];
   
   const enviarFormulario = (event) => {
     event.preventDefault();
-    
     let usuarioingr = event.target.usuario.value; 
     let passingr =event.target.password.value;
     ingresousuario.push(new Usuarios({usuarioingr, passingr}));
@@ -24,20 +24,14 @@ class Usuarios{
     document.body.append(' Bienvenido '+ usuarioingr); 
      };
   form.addEventListener("submit",enviarFormulario);
+  //Ver el registro de clientes 
+  console.log(ingresousuario);
   
-//Este boton no funciona bien, la idea es al presionar tendria que ir al link de la tienda
- function link(){
-    location.href = "./tienda.html"; 
- }; 
-let $boton = document.querySelectorAll(".btn2");
-console.log($boton); 
- $boton.onmousedown = () => {console.log ("?")};
-   $boton.onclick = () => {console.log(`se hace`)};
-   $boton.addEventListener("click", link);
+//Link a tienda
+let $button = document.getElementById("btn2");
+$button.onclick= iratienda;
+function iratienda(evento){
+  console.log("funciona");
+  location.href="./tienda.html";
+}
 
-// let iratienda ="./tienda.html";
-// $boton.addEventListener("url", iratienda );
-
-
-  
-//  
