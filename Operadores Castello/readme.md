@@ -3,5 +3,6 @@
 
 //se agrego tabla para el carrito y la forma de seleccionar cada tratamiento para que aparezca en el carrito y luego se realice la compra
 
-
+//Se realizo modificacion en el codigo de Tienda.js agregando funcionalidades, sumando el total y que el carrito se actualice sin necesidad de presionar el boton.
+// falta terminar funcion borrado 
 // Se agregaron Operadores Ternarios en la validacion del ingreso de los usuarios , en Formulario.js
