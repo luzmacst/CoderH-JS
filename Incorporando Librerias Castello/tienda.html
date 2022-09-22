@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <style>
+      body {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;, serif}
+      h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:5px; color:brown}
+      </style>
+</head>
+<body>
+    <nav class="brown lighten-2">
+        <div class="nav-wrapper">
+          <div class="container">
+          <a href="./index3.html" class="brand-logo">Inicio</a>
+          <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="link-form"><a href="./index3.html">-</a></li>  
+            <li><a href="./index3.html">Tratamientos</a></li>
+            <li><a href="./formulario.html">Identificarse</a></li>
+          </ul>
+          </div>
+        </div>
+      </nav> 
+    <div class="container">
+      <br>
+     <div class="row s6">
+       <img src="./imagenes/pexels-arina-krasnikova-6663369.jpg"  height="400px" width="auto">
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!-- Tabla para eleccion de tratamiento -->
+      <table id="tablacarrito">
+        <thead>
+          <tr>
+              <th>Codigo</th>
+              <th>Seleccion</th>
+              <th>Precio</th>
+              <th>Cantidad</th>        
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr id="gral">
+            <th class="cod-titulo">Cod.1</th>
+            <td class="name-tratamiento">Peeling</td>
+            <td class="precio-tratamiento"><span>$</span>3500</td>
+            <td class="cant-seleccionada"><input type="number" min="1" value="1" ></td>
+            <td id="btngrl"><a class="btn-floating btn-large waves-effect waves-light aquamarine" ><i class="material-icons" type="button">add</i></a></td>
+                               
+            
+          </tr>
+          <tr id="gral">
+            <th class="cod-titulo">Cod.2</th>
+            <td class="name-tratamiento">HiFu</td>
+            <td class="precio-tratamiento"><span>$</span>5000</td>
+            <td class="cant-seleccionada"><input type="number" min="1" value="1" ></td>               
+            <td id="btngrl"><a class="btn-floating btn-large waves-effect waves-light aquamarine"><i class="material-icons"  type="button">add</i></a></td>
+            
+          </tr>
+          <tr id="gral">
+            <th class="cod-titulo">Cod.3</th>
+            <td class="name-tratamiento">Lifting de pestañas</td>
+            <td class="precio-tratamiento"><span>$</span>2500</td>
+            <td class="cant-seleccionada"><input type="number" min="1" value="1"></td> 
+            <td  id="btngrl"><a class="btn-floating btn-large waves-effect waves-light aquamarine"><i class="material-icons"  type="button">add</i></a></td>
+            
+          </tr>
+          <tr id="gral">
+            <th class="cod-titulo">Cod.4</th>
+            <td class="name-tratamiento">Depilacion</td>
+            <td class="precio-tratamiento"><span>$</span>1800</td>
+            <td class="cant-seleccionada"><input type="number" min="1" value="1"></td> 
+            <td id="btngrl"><a class="btn-floating btn-large waves-effect waves-light aquamarine"><i class="material-icons"  type="button">add</i></a></td>
+           
+          </tr>
+          <tr id="gral">
+            <th class="cod-titulo">Cod.5</th>
+            <td class="name-tratamiento">Masajes</td>
+            <td class="precio-tratamiento"><span>$</span>1500</td>
+            <td class="cant-seleccionada"><input type="number" min="1" value="1"></td> 
+            <td id="btngrl"><a class="btn-floating btn-large waves-effect waves-light aquamarine"><i class="material-icons"  type="button">add</i></a></td>
+            
+          </tr>
+          <tr id="gral">
+            <th class="cod-titulo">Cod.6</th>
+            <td class="name-tratamiento">HimFu</td>
+            <td class="precio-tratamiento"><span>$</span>4500</td>
+            <td class="cant-seleccionada"><input type="number" min="1" value="1"></td> 
+            <td id="btngrl"><a class="btn-floating btn-large waves-effect waves-light aquamarine"><i class="material-icons"  type="button">add</i></a></td>
+            
+          </tr>
+        </tbody>
+      </table>
+  <div>
+      <div class="carrito-add">
+        <!-- <button id="btn4" class="btn waves-effect waves-light" name="action" type="button" onclick="mostrarseleccion()">Mostrar Carrito
+          <i class="material-icons right">send</i>
+        </button> -->
+        <hr>
+<h3>Tratamientos Seleccionados</h3>
+        <table id="seleccioncarrito">
+          <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Seleccion</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody> </tbody> </table>
+  <!--Agregar un boton de libreria indicando si esta seguro de realizar la compra-->        
+      </div>
+  <div class="row s4">
+    <div class="col">
+      
+      <h3 class="Item-Total">Total :<span> </span></h3>
+    </div>
+    <div class="s12">
+      <button class="btn-compra" type="button" onclick="comprartratamientos ()">Comprar</button>
+      <li>💳 VISA Card</li>
+      <li>💳 Mastercard</li>
+      <li>💳 AMEX</li>
+    </div>
+   
+  </div> <h3>Es necesario identificarse para comprar</h3>
+  <div >
+    <button id="btn-login" >Login</button>
+    
+  </div>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <!-- Eventos para la web -->
+      <script src="./js/formulario.js"> </script>
+      <script src="./js/tienda.js"> </script>
+      <!-- libreria Sweetalert2 -->
+      <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+     </div>
+
+
+    </div>
+</body>
+</html>
