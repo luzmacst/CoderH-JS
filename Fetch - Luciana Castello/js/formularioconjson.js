@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
 });
 
-
+// Desarrollo del codigo 
 let newUsuario ={};
 let newUsuarioJSON=[];
 
@@ -22,21 +22,18 @@ let newUsuarioJSON=[];
 fetch('./data.json')
 .then(response => response.json())
 .then(data => putdata(data));
-    //console.log(data));
+  
 
 function putdata(data){
     const veodatos= data;
-    // console.log(veodatos);
-    
+   
     veodatos.forEach(element => {
-         usuariosJSON=element.usuario;
-         passwordJSON=element.password;
+       let usuariosJSON=element.usuario;
+       let passwordJSON=element.password;
        newUsuarioJSON.push(new Usuarios (usuariosJSON,passwordJSON));
-        //newUsuarioJSON.push(usuariosJSON);
-       //console.log(newUsuarioJSON);
-        }); 
-        console.log(newUsuarioJSON);   
- // console.log(Object.entries(newUsuarioJSON)); 
+         }); 
+       // console.log(newUsuarioJSON);   
+ 
  }
 
 
@@ -66,14 +63,14 @@ const enviarFormulario = (event) => {
     // valido que la contraseña sea mayor a 4 caracteres 
     passingr.length < 4 ? alert  ("Ingrese contraseña de mas de 4 caracteres") : null;
     const busco = newUsuarioJSON.find( dato => dato.ingresousuario ==usuarioingr);
-    console.log(busco); 
-    
+    //console.log(busco); 
     if (busco != undefined){
-      
-        direccionar();
-        } else alert("Usuario Incorrecto, intente nuevamente");
+      const busco2 = newUsuarioJSON.find( dato2 => dato2.password ==passingr);
+      if( busco2 != undefined){
+          direccionar();
+        } else alert("Credenciales incorrectas, intente nuevamente");
    
-    
+      } 
 };
 
 // detecto el clic en el formulario y llamo a la funcion para evaluar los datos del DOM
