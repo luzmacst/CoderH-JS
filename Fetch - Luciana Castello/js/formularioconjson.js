@@ -65,37 +65,21 @@ const enviarFormulario = (event) => {
     console.log(passingr);
     // valido que la contraseña sea mayor a 4 caracteres 
     passingr.length < 4 ? alert  ("Ingrese contraseña de mas de 4 caracteres") : null;
-    newUsuario =new Usuarios (usuarioingr,passingr);
-    ingresousuario.push(newUsuario);
-    console.log(newUsuario);
+    const busco = newUsuarioJSON.find( dato => dato.ingresousuario ==usuarioingr);
+    console.log(busco); 
+    
+    if (busco != undefined){
       
-     comparar (newUsuario,newUsuarioJSON);
-    //cuando se registra el usuario , se da la bienvenida 
-    // Se podria agregar la bienvenida de otra forma , con algun estilo Css
-    // document.body.append(' Bienvenida a nuestra Web , gracias por elegirnos '+ usuarioingr); 
-    // document.body.append(" ");
+        direccionar();
+        } else alert("Usuario Incorrecto, intente nuevamente");
+   
     
 };
 
 // detecto el clic en el formulario y llamo a la funcion para evaluar los datos del DOM
 form.addEventListener("submit",enviarFormulario);
 
-
-//Comparo que los datos de mi BD sean iguales a los que ingresa el usuario/cliente
-function comparar(newUsuario,newUsuarioJSON){
- const dato1= newUsuario.ingresousuario;
- console.log(dato1);
- 
- //let dato2=newUsuarioJSON.ingresousuario;
- console.log(newUsuarioJSON);
- const busco = newUsuarioJSON.find( dato => dato.ingresousuario ==dato1);
- console.log(busco);
- if (busco != undefined){
- direccionar();
- }
-
-}
-
+//Si el usuario esta en la BD se direcciona a la web ppal
 function direccionar(){
   location.href="./index3.html";
 }
