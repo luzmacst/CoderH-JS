@@ -1,0 +1,65 @@
+
+/* h1 {
+    font-family:serif;
+    letter-spacing:5px;
+    color:brown;
+} */
+ h4 {
+    font-family:serif;
+    font-size: 16 px;
+    letter-spacing:84 px;
+    color:brown;
+} 
+
+h5 {
+    font-family: Lucida Sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4px;
+    color:brown;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+} 
+h6{
+    font-family:serif; 
+    letter-spacing:4px; 
+    color:brown;
+}
+
+body {
+    width:100% ;
+    height:100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+#template-card{
+    display: flex;
+    justify-content:space-between;
+    justify-content:space-around;
+}
+
+#template-card .card .card-body .card-image{
+    width: auto;
+    height: auto;
+}
+#template-card .col s12 m2 .card .card-body h6{
+    font-family:sans-serif;
+    font-size: 4 px;
+}
+#template-card .card .card-body p{
+    font-size: 4 px;
+}
+
+#template-card .card .card-body .btn-dark{
+    font-size: 4 px;
+}
+.section-container-menu-responsive .card .card-image{
+    width: auto;
+    height: auto;
+    
+}
+.section-container-menu-responsive .card-content p{
+    padding: 01 rem;
+    font-size: 10 px;
+    font-weight: 200;
+}

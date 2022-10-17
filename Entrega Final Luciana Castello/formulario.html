@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario validacion de usuario</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.min.css"  media="screen,projection"/>
+    <style>
+        body {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;, serif}
+        h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:5px; color:brown}
+        </style>
+    </head>
+<body>
+    <nav class="brown lighten-2">
+        <div class="nav-wrapper">
+          <div class="container">
+          <a href="./index3.html" class="brand-logo">Inicio</a>
+          <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+              
+              <i class="material-icons">menu</i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <!-- <li class="link-form"><a href="./index3.html"></a></li>   -->
+            <li><a href="./index3.html">Tratamientos</a></li>
+            <li><a href="./tratamientos.html">Comprar</a></li>
+          </ul>
+              
+        </div>
+        </div>
+      </nav> 
+      
+   <div class="hideContent section container"> 
+    <div class="row">
+        <form id="formulario" class="=col s12">
+            <div class="row card-panel">
+                <div class="input-field col s6">
+                    <input type="text" placeholder="Ingresa tu usuario" id="usuario" class="validate" required>
+                    <label for="usuario">Usuario</label>
+                </div>
+                <div class="input-field col s6">
+                    <input type="text" id="password" id="password" class="validate" required>
+                    <label for="password">Contraseña</label>
+                </div>
+                <button class="btn" type="submit">Enviar</button>
+                
+            </div>
+           <h4>Que bueno que estas aca! </h4> 
+            <!-- <button id="btn2" >Ir a la Tienda</button> -->
+        </form>
+    </div>
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <div class="container section"> <p>Proyecto Final curso de JS , Realizado por Luciana M Castello </p></div>
+   
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
+    
+    <!-- libreria Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/formularioconjson.js"></script>
+            
+</body>
+</html>
